@@ -1,0 +1,36 @@
+In this project, I tried to write a command-line application for tracking the status
+of daily affairs. To achieve this we have to use the sys module from python. The sys module
+in Python provides various functions and variables that are used to manipulate different
+parts of the Python runtime environment. When you run the application by /python todo.py 
+it will show you the options that you can use and how to manipulate the application.
+
+1 - By providing /python todo.py -l you can see the list of the tasks, if the list
+is empty, you will get a message and the application will tell you there are no todos, 
+It is inevitable that in the beginning, it will be empty and it will send the following 
+message.
+
+2 - You can add as many tasks as you usually face in a day and you want to track.
+So the application opens the todo.txt file for reading and then takes the task 
+and appends the task to the todo.txt. The command for this is:
+
+/python todo.py -a
+If you use -a without the next argument it will also provide an error
+
+3 - If you want to delete a task it is fulfilled by the -r argument. It simply takes the 
+number of the task that you wish to delete and eliminates it from the todo.txt.The command
+for this option is:
+
+/python todo.py -r number_of_task
+which should be an integer, otherwise it will provide an error
+If you use -r without the next argument it will also provide an error
+
+4 - In the last option, You can tell the application which tasks have been completed by you
+and see the list of the completed tasks. The command is:
+
+/python todo.py -c number_of_task
+which should be an integer, otherwise it will provide an error
+If you use -c without the next argument it will also provide an error
+
+
+
+
